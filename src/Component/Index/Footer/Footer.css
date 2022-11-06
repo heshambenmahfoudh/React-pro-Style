@@ -1,0 +1,117 @@
+footer {
+  padding-top: var(--padd3-padding);
+  padding-bottom: var(--padd4-padding);
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+footer .colum:first-child {
+  flex: 0 33.3%;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 282.38px;
+}
+footer .colum .head {
+  width: 100%;
+  padding: 0;
+  height: 145px;
+}
+footer .colum .head h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+footer .colum .head p {
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+footer .colum .weight h3 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+footer .colum .weight ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+footer .colum .weight ul li {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 10px;
+  margin-right: 5px;
+  color: #fff;
+  position: relative;
+}
+footer .colum .weight ul li a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  transition: 0.3s ease;
+}
+footer .colum .weight ul li a:hover {
+  color: #000;
+}
+footer .colum:last-child {
+  flex: 0 50.1%;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 282.38px;
+}
+footer .colum:last-child .head {
+  width: 100%;
+  height: 50px;
+}
+footer .colum:last-child .head h2 {
+  margin-bottom: 30px;
+}
+footer .colum:last-child .links {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  height: 183px;
+}
+footer .colum:last-child .links ul {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer .colum:last-child .links ul li {
+  margin-bottom: 10px;
+  text-align: left;
+  height: 22px;
+}
+footer .colum:last-child .links ul li a {
+  font-size: 15px;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  footer .colum:first-child {
+    flex: 0 100%;
+  }
+  footer .colum:last-child {
+    flex: 0 100%;
+  }
+}
+@media (max-width: 767px) {
+  footer .colum:last-child {
+    width: 100%;
+  }
+
+  footer .colum:last-child .links {
+    flex-wrap: wrap;
+    height: max-content;
+  }
+  footer .colum:last-child .links ul {
+    flex: 0 50%;
+    height: 182px;
+  }
+}

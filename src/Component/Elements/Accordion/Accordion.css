@@ -1,0 +1,77 @@
+.accordiom-2 {
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+}
+
+.accordiom-2 .row-acc-2 {
+  margin: -15px;
+}
+
+.accordiom-2 .acc-head {
+  width: 100%;
+  height: 35.19px;
+  padding: 0 15px;
+}
+
+.accordiom-2 .acc-head h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+.accordiom-2 .accor {
+  padding: 0 15px;
+  min-height: 175px;
+}
+
+.accordiom-2 .accor .acc {
+  padding: 20px 0;
+  width: 100%;
+  height: 53px;
+  background-color: #e8e5de;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+.accordiom-2 .accor .acc span {
+  width: 2.4%;
+}
+.accordiom-2 .accor .acc h1 {
+  font-size: 14px;
+  cursor: pointer;
+}
+.accordiom-2 .accor .acc:hover {
+  font-weight: bolder;
+}
+
+.accordiom-2 .accor .desc {
+  padding: 0 23px;
+  /* max-height: 0; */
+  height: 0;
+  overflow: hidden;
+  transition: all 0.9s cubic-bezier(0, 1, 0, 1);
+}
+.accordiom-2 .accor .desc.show {
+  height: auto;
+  /* max-height: 9999999px; */
+  transition: all 0.9s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordiom-2 .accor .desc p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.accordiom-2 .accor .desc p:first-child {
+  padding-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .accordiom-2 .accor {
+    flex: 0 100% !important;
+  }
+  .accordiom-2 .accor .acc span {
+    width: 5%;
+  }
+  .accordiom-2 .row-acc .title {
+    flex: 0 100% !important;
+  }
+}

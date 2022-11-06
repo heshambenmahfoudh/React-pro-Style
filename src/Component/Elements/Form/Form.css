@@ -1,0 +1,131 @@
+.set-section-contact {
+    padding-bottom: 48px;
+    margin-bottom: 48px
+}
+
+.set-section-contact .row-contact {
+    margin: 0 -15px;
+}
+
+.set-section-contact form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.set-section-contact .head-cont {
+    width: 100%;
+    height: 35.19px;
+    padding: 0 15px;
+}
+
+.set-section-contact .head-cont h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+.set-section-contact .section-email {
+    width: 58.33333333%;
+    padding: 0 15px;
+}
+
+.set-section-contact form .serv-em-01 label {
+    display: inline-block;
+    margin-bottom: 8px
+}
+
+.set-section-contact .serves-emils-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.set-section-contact form .serv-em-01:first-child {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.set-section-contact form .serv-em-01:nth-child(2) {
+    width: 50%;
+    padding-left: 15px;
+}
+
+.set-section-contact form .serv-em-02 {
+    width: 100%;
+    min-height: 45px;
+}
+
+.set-section-contact form .serv-em-02,
+.set-section-contact form .serv-em-01 {
+    margin-bottom: 16px;
+}
+
+.set-section-contact form .serv-em-02 .serv-em-02-span {
+    display: block;
+    margin-top: 4px;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.set-section-contact form .serv-em-02 label {
+    display: inline-block;
+    margin-bottom: 8px !important
+}
+
+.set-section-contact form .input-serv-em1 {
+    min-width: 100%;
+    min-height: 45px;
+    padding: 6px 12px;
+    outline: none;
+    border: 1px solid transparent;
+    border: 1px solid #000000;
+    background: transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.set-section-contact form .check-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.set-section-contact form .check-box input[type='checkbox'] {
+    width: 25px;
+    height: 21px;
+    accent-color: black;
+    outline: none;
+    border: none;
+}
+
+.set-section-contact form .check-box input[type='checkbox']:hover {
+    cursor: pointer;
+}
+
+.set-section-contact .check-box label {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.set-section-contact .btn1 button {
+    padding: 13.5px 25.9px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media(max-width:991px) {
+    .set-section-contact .section-email {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .set-section-contact form .serv-em-01:first-child,
+    .set-section-contact form .serv-em-01:nth-child(2) {
+        width: 100%;
+        padding: 0
+    }
+}

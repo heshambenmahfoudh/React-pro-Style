@@ -1,0 +1,57 @@
+.section-contact .serves-emils {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.section-contact .serves-emils .serv-em-1 {
+  width: 50%;
+  padding: 0 15px;
+}
+.section-contact .serves-emils .serv-em-2 {
+  width: 100%;
+  min-height: 45px;
+  padding: 0 15px;
+}
+.section-contact .serves-emils .serv-em-2 textarea {
+  min-height: 230px;
+}
+.section-contact .serves-emils .input-serv-em {
+  min-width: 100%;
+  min-height: 45px;
+  padding: 6px 12px;
+  outline: none;
+  border: 1px solid transparent;
+  border: 1px solid #000000;
+  background: transparent;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 16px;
+}
+.section-contact .serves-emils label {
+  margin-bottom: 8px;
+  font-size: 15px;
+  display: inline-block;
+}
+.section-contact .serves-emils .btn button {
+  padding: 13.5px 29.5px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: -0.1px;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .section-contact .service-con {
+    display: block;
+  }
+  .section-contact .service-con .sec-serv {
+    flex: 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .section-contact .serves-emils .input-serv-em {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.section-icon {
+    padding-bottom: 48px;
+    margin-bottom: 48px
+}
+
+.section-icon .rwo-icon {
+    margin: 0 -15px
+}
+
+.section-icon .head-icon {
+    padding: 0 15px;
+    height: 35.19px;
+}
+
+.section-icon .head-icon h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: normal
+}
+
+.section-icon .all-icon .icon {
+    width: 58.3333333%;
+    padding: 0 15px;
+    height: 62.5px
+}
+
+.section-icon .all-icon .icon ul {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.section-icon .all-icon .icon ul li {
+    background-color: #f8f9fa;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.section-icon .all-icon .icon ul li a {
+    color: #000 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+@media(max-width:991px) {
+    .section-icon .all-icon .icon {
+        width: 100%
+    }
+}

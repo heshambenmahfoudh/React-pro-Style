@@ -1,0 +1,136 @@
+.section-B {
+  padding: var(--padd-padding) 0;
+}
+
+.section-B .row-b {
+  margin: 0 -15px;
+}
+
+.section-B .all-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.section-B .all-img .img {
+  border-radius: 5px 5px 0 0;
+}
+
+.section-B .all-img .blogs {
+  padding: 0 15px !important;
+  width: 33.333%;
+  margin-bottom: 48px;
+}
+
+.section-B .all-img .img .tit {
+  background-color: white;
+  padding: 24px;
+  min-height: 205px;
+  margin-top: -4px;
+}
+
+.section-B .all-img .img:hover {
+  transform: translateY(-6px);
+  box-shadow: 5px 5px 30px rgb(34, 32, 32);
+  transition-delay: 0.9s;
+  transition: 0.8s all ease;
+}
+
+.section-B .all-img .img .tit h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.section-B .img .tit span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #9999;
+}
+
+.section-B .all-img .img .tit p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 15px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.section-B .all-img .img .tit a {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.section-B .span {
+  padding: 0 15px;
+}
+
+.section-B .span ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-B .span ul li {
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 2px;
+  height: 40px;
+  transition: 0.3s;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.section-B .span ul li a {
+  color: #000;
+}
+
+.section-B .span ul .active {
+  border: 1px solid #000;
+}
+
+.section-B .span ul li:hover {
+  border: 1px solid #000;
+}
+
+.section-B .all-img .img img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 991px) {
+  .section-B {
+    padding: var(--padd2-padding) 0;
+  }
+  .section-B .all-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 !important;
+  }
+  .section-B .all-img .blogs {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .section-B .all-img .img .tit h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-B .head {
+    width: 100%;
+  }
+  .section-B .all-img .blogs {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}

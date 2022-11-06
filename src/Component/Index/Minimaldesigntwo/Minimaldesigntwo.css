@@ -1,0 +1,57 @@
+.section-icons {
+  padding: var(--padd-padding) 0;
+  height: auto;
+}
+.section-icons .row-icn {
+  margin: 0 -15px;
+}
+.section-icons .row-icn .all-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-icons .row-icn .icon {
+  padding: 0 15px;
+  flex: 0 33.333%;
+  height: 242px;
+}
+.section-icons .row-icn .icon i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 60px;
+}
+.section-icons .row-icn .icon h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+.section-icons .row-icn .icon p {
+  font-size: 15px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.section-icons .row-icn .icon a {
+  padding-right: 30px;
+  margin-bottom: 16px;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 991px) {
+  .section-icons {
+    padding: var(--padd2-padding) 0;
+    height: auto;
+  }
+  .section-icons .row-icn .all-icon .icon {
+    flex: 0 50%;
+  }
+}
+@media (max-width: 576px) {
+  .section-icons .row-icn .all-icon .icon {
+    flex: 0 100%;
+  }
+}

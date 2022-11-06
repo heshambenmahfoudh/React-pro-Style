@@ -1,0 +1,109 @@
+.site-section {
+  padding-top: var(--padd-padding);
+  padding-bottom: var(--padd-padding);
+}
+.site-section .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap !important;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.site-section .row .box-1 {
+  flex-basis: 31%;
+  padding-left: 15px;
+  padding-right: 15px;
+  transform: translate3d(0px, 130px, 0px);
+  transition-duration: all 0.9s linear;
+}
+
+.site-section .row .box-1.active {
+  position: relative;
+  z-index: 0;
+  transform: translate3d(0px, -70px, 0px);
+  transition-duration: all 9s;
+}
+.site-section .row .box-2 {
+  flex-basis: 31%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 48px;
+}
+
+.site-section .row .box-1 .head1 {
+  text-align: center;
+  width: 100% !important;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.site-section .row .box-1 .head1 h2 {
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.site-section .row .box-1 .head1 span,
+.site-section .row .box-2 .head2 span {
+  font-size: 15px;
+}
+.site-section .row .box-1 .img-1 img {
+  margin: 48px 0;
+  width: 350px !important;
+  height: 420px !important;
+}
+.site-section .row .box-1 .par p {
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+.site-section .row .box-2 .head2 {
+  text-align: left;
+  position: relative;
+}
+.site-section .row .box-2 .head2 .lines {
+  width: 52px;
+  height: 1px;
+  background: #000;
+  margin-top: 20px;
+}
+.site-section .row .box-2 .head2 h2 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+.site-section .row .box-2 .par p {
+  font-size: 15px;
+  margin: 24px 0;
+  line-height: 1.5;
+}
+.site-section .row .box-2 .img-2 img {
+  width: 445p;
+  height: 534px;
+}
+
+@media (max-width: 1200px) {
+  .site-section .row .box-1 .img-1 img {
+    width: 290px !important ;
+    height: 380px !important ;
+  }
+  .site-section .row .box-2 .img-2 img {
+    width: 370px;
+    height: 444px;
+  }
+}
+@media (max-width: 991px) {
+  .site-section {
+    padding: var(--padd2-padding) 0;
+  }
+  .site-section .row .box-1,
+  .site-section .row .box-2 {
+    flex: 0 100%;
+  }
+
+  .site-section .row .box-1 .img-1 img,
+  .site-section .row .box-2 .img-2 img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

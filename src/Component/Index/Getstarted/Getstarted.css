@@ -1,0 +1,49 @@
+.lets {
+    padding: var(--padd-padding) 0
+}
+
+.row-lets {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 -15px
+}
+
+.lets .content {
+    padding: 0 15px;
+    width: 51.7% !important;
+}
+
+.lets .content h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    width: 100%;
+}
+
+.lets .content p {
+    font-size: 15px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.lets .content .btn-2 button {
+    padding: 13.5px 29.6px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    cursor: pointer;
+}
+
+@media(max-width: 991px) {
+    .lets {
+        padding: var(--padd2-padding) 0 !important
+    }
+    .lets .content {
+        padding: 0 15px;
+        width: 100% !important
+    }
+}

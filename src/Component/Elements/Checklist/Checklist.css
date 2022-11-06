@@ -1,0 +1,46 @@
+.section-chisk {
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+}
+
+.section-chisk .row-te {
+    margin: 0 -15px
+}
+
+.section-chisk .head-te {
+    padding: 0 15px;
+    height: 35.19px;
+}
+
+.section-chisk .head-te h2 {
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: normal
+}
+
+.section-chisk .all-chisk {
+    height: 83.5px;
+    padding: 0 15px;
+    width: 58.3333333333333333%;
+}
+
+.section-chisk .all-chisk .chisk {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.section-chisk .all-chisk p {
+    font-size: 15px;
+}
+
+.section-chisk .all-chisk p span {
+    font-size: 20px;
+    padding: 3px 15px 3px 0;
+    vertical-align: middle;
+}
+
+@media(max-width:991px) {
+    .section-chisk .all-chisk {
+        width: 100%
+    }
+}

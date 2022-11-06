@@ -1,0 +1,106 @@
+.chooseus {
+  padding-bottom: 48px;
+  margin-bottom: 48px;
+}
+.chooseus .row-acc {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.chooseus .title {
+  flex: 0 33.3%;
+  padding: 0 15px;
+  height: auto;
+}
+.chooseus .title h2 {
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.chooseus .title .line {
+  height: 1px;
+  width: 50px;
+  background-color: #000;
+  margin: 16px 0;
+}
+
+.chooseus .title p {
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.chooseus .title .btn {
+  margin-top: 48px;
+  background-color: #000;
+  border-radius: 4px;
+  padding-top: 23.5px;
+  padding-bottom: 23.5px;
+  position: relative;
+}
+.chooseus .title .btn a {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 14px;
+}
+.chooseus .row-acc .accor {
+  flex: 0 58.3%;
+  padding: 0 15px;
+}
+
+.chooseus .accor .acc {
+  padding: 20px 0;
+  width: 100%;
+  height: 53px;
+  background-color: #e8e5de;
+  border-bottom: 1px solid black;
+  display: flex;
+  transition-duration: 2s ease;
+}
+.chooseus .accor .acc span {
+  width: 5%;
+}
+.chooseus .accor .acc h1,
+.chooseus .accor .acc span {
+  font-size: 14px;
+  cursor: pointer;
+}
+.chooseus .accor .acc:hover {
+  font-weight: bolder;
+}
+
+.chooseus .accor .desc {
+  padding: 0 23px;
+  height: 0;
+  overflow: hidden;
+  transition-duration: 2s ease;
+}
+.chooseus .accor .desc.show {
+  height: auto;
+  transition-duration: 2s ease;
+}
+
+.chooseus .accor .desc p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.chooseus .accor .desc p:first-child {
+  padding-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .chooseus {
+    padding: var(--padd2-padding) 0;
+  }
+  .chooseus .accor {
+    flex: 0 100% !important;
+  }
+  .chooseus .row-acc .title {
+    flex: 0 100% !important;
+  }
+}

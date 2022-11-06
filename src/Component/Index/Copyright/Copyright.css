@@ -1,0 +1,30 @@
+.description  .row{
+   margin: 40px -15px 0 -15px;
+   position: relative;
+   padding: 40px 0 30px ;
+   
+}
+.description  .c-r:after{
+   content: '';
+   top:0;
+   position: absolute;
+   height: 1px;
+   left: 15px;
+   right:15px;
+   background-color: #000;
+}
+
+.description p{
+   padding: 0 15px;
+ margin:0 auto 0;
+ height:40px;
+ flex: 0 70%;
+ text-align: center;
+ font-size: 15px;
+
+}
+
+
+
+
+

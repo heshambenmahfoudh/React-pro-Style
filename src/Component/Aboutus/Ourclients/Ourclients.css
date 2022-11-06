@@ -1,0 +1,60 @@
+.clients {
+  padding: var(--padd-padding) 0;
+}
+.clients .row-cli {
+  margin: 0 -15px;
+  text-align: center;
+}
+.clients .head-cli {
+  width: 50%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.clients .head-cli h2 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+.clients .head-cli .line {
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  margin: 16px 0;
+  display: inline-block;
+}
+.clients .all-img-cli {
+  padding: 0 15px;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.clients .all-img-cli::-webkit-scrollbar {
+  display: none;
+}
+.clients .all-img-cli img:hover {
+  cursor: pointer;
+}
+
+.clients .img-cli img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .clients {
+    padding: var(--padd2-padding) 0;
+  }
+  .clients .head-cli {
+    width: 100%;
+  }
+  .clients .img-cli {
+    min-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .clients {
+    padding: var(--padd2-padding) 0;
+  }
+  .clients .img-cli {
+    min-width: 100%;
+  }
+}

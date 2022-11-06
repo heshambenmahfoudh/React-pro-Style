@@ -1,0 +1,80 @@
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+}
+nav .lg {
+  font-size: 25px;
+}
+nav .lg a {
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+nav .Menu {
+  font-size: 31px;
+}
+
+nav .sidbar {
+  position: relative;
+  z-index: 100;
+}
+nav .sidbar .links {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 5;
+  list-style: none;
+  padding: 0 20px 20px;
+  background-color: #fffcf4;
+  text-align: start;
+  box-shadow: -10px 0 20px -50px rgb(0 0 0 / 30%);
+}
+
+nav .sidbar .links ul {
+  margin-top: 60px;
+  transition-duration: 6s ease;
+}
+
+nav .sidbar .Menu,
+nav .sidbar .close:hover {
+  transition: 0.8s ease;
+  cursor: pointer;
+}
+
+nav .sidbar .close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: rgb(70, 70, 110);
+  border-radius: 50%;
+  color: #fff;
+}
+
+nav .sidbar li {
+  padding: 10px 0;
+}
+
+nav .sidbar li a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  font-size: 14px;
+  padding: 10px;
+  min-width: 243px;
+}
+nav .sidbar li a.active {
+  color: #6c757d;
+  margin-left: 5px;
+}
