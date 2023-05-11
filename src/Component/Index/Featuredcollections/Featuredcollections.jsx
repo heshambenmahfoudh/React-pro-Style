@@ -5,7 +5,6 @@ import { featuredcollections } from '../Data/dunmmy'
 const Featuredcollections = () => {
   const scrollRef = useRef()
 
-  var work = true
   const scroll = (dir) => {
     const sc_Ref = scrollRef.current
 

@@ -4,7 +4,6 @@ import imgv4min from './imgv4min.jpg'
 import imgv5min from './imgv5min.jpg'
 import imgv6min from './imgv6min.jpg'
 import imgv7min from './imgv7min.jpg'
-import imgv8min from './imgv8min.jpg'
 import imgh2min from './imgh2min.jpg'
 import imgh3min from './imgh3min.jpg'
 import imgh4min from './imgh4min.jpg'
@@ -73,34 +72,34 @@ export const featuredcollections = [
   },
   {
     id: 7,
-    image: imgv8min,
+    image: imgv5min,
     h3: 'Man White Blazer',
     p: 'Far far away, behind the word mountains, far from the countries.',
   },
 
   {
     id: 8,
-    image: imgv8min,
+    image: imgv5min,
     h3: 'Man White Blazer',
     p: 'Far far away, behind the word mountains, far from the countries.',
   },
 
   {
     id: 9,
-    image: imgv8min,
+    image: imgv4min,
     h3: 'Man White Blazer',
     p: 'Far far away, behind the word mountains, far from the countries.',
   },
   {
     id: 10,
-    image: imgv8min,
+    image: imgv6min,
     h3: 'Man White Blazer',
     p: 'Far far away, behind the word mountains, far from the countries.',
   },
 
   {
     id: 11,
-    image: imgv8min,
+    image: imgv3min,
     h3: 'Man White Blazer',
     p: 'Far far away, behind the word mountains, far from the countries.',
   },

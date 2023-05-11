@@ -44,6 +44,7 @@
   line-height: 55px;
   text-align: center;
   font-size: 17px;
+    cursor: pointer;
 }
 .si-section .content-si .span-si span:hover {
   background-color: #fff;
@@ -64,6 +65,7 @@
 }
 .si-section .si-img .img-content {
   margin-right: 10px;
+
 }
 
 .si-section .si-img .img-content .img {

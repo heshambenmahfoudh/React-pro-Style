@@ -57,33 +57,33 @@ export const accordion = [
 export const gallery = [
   {
     id: 1,
-    a: imgh2min,
+    
     image: imgh2min,
   },
   {
     id: 2,
-    a: imgh3min,
+    
     image: imgh3min,
   },
   {
     id: 3,
-    a: imgh4min,
+    
     image: imgh4min,
   },
   {
     id: 4,
-    a: imgh6min,
+    
     image: imgh6min,
   },
   {
     id: 5,
-    a: imgh7min,
+    
     image: imgh7min,
   },
   {
     id: 6,
-    a: imgh8min,
-    image: imgh8min,
+    
+    image: imgh3min,
   },
 ]
 

@@ -1,74 +1,142 @@
-/* .section-Testimonials {
-  padding: var(--padd-padding) 0;
-  margin: 4000px;
-}
-.section-Testimonials .row-test {
-  margin: 0 -15px !important;
-}
-.section-Testimonials .head {
-  text-align: center;
-  max-width: 560px;
-  padding: 0 15px !important;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section-Testimonials .head h2 {
-  margin-bottom: 8px;
-  font-size: 32px;
-  font-weight: normal;
-  display: flex;
-  justify-content: center;
-}
-.section-Testimonials .head .line {
-  width: 50px;
-  height: 1px;
-  background-color: #000;
-  margin: 8px 0;
-  display: inline-block;
-}
-.section-Testimonials .test-slid-con {
-  text-align: center;
-  position: relative;
-  display: inline;
-  display: flex;
-}
-.section-Testimonials .test-slid-con .test-ite {
-  width: 100%;
-  max-width: 560px;
-  margin: auto;
-  padding: 0 15px;
-}
-.section-Testimonials .test-slid-con .test-ite img {
-  width: 70px;
-  border-radius: 50%;
-  margin-bottom: 16px;
-}
-.section-Testimonials .test-slid-con .test-ite h2 {
-  font-size: 18px;
-  margin-bottom: 8px;
-  font-weight: normal;
-}
-.section-Testimonials .test-slid-con .test-ite blockquote {
-  max-width: 500px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
-.section-Testimonials .test-slid-con .test-ite blockquote p {
-  width: 100%;
-  font-size: 15px;
-  line-height: 1.5;
+.section-tes-ls {
+  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
-.section-Testimonials .test-slid-con .slide-nav {
+.section-tes-ls .row-test {
+  margin: 0 -15px;
+}
+
+.section-tes-ls .head-test {
+  padding: 0 15px;
+  height: 35.19px;
+  text-align: center;
+}
+
+.section-tes-ls .head-test h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+
+.section-tes-ls .all-test {
+margin: auto;
+margin-top: 60px;
+}
+
+.section-tes-ls .all-test .img-test {
+  margin: auto;
+  width: 70px;
+  margin-bottom: 16px;
+}
+
+.section-tes-ls .all-test .img-test img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.section-tes-ls .text-testm {
+  text-align: center;
+}
+
+.section-tes-ls .all-test .text-testm h2 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.section-tes-ls .all-test .text-testm blockquote {
+  margin: auto auto 16px auto;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.section-tes-ls .all-test .testmonials {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+  transition-duration: 3s;
+}
+.section-tes-ls .all-test .testmonials .test.active {
+  transition: 2s;
+  transform: translateX(100%);
+}
+.section-tes-ls .all-test .testmonials .test {
+  transition: 2s;
+  /* transform: translateX(-100%); */
+  transform: translateX(0);
+}
+
+.section-tes-ls .all-test .next-pre-testm .change {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 75%;
+  transform: translateY(-75%);
 }
-.section-Testimonials .test-slid-con i.fa-angle-left {
-  left: 30px !important;
+
+.section-tes-ls .all-test .next-pre-testm .change:hover {
+  cursor: pointer;
 }
-.section-Testimonials .test-slid-con .slide-nav i.fa-angle-right {
-  right: 30px !important;
-  background-color: red;
-} */
+.section-tes-ls .change {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  background-color: #fff;
+  font-size: 16px;
+}
+.section-tes-ls .right {
+  right: -35px;
+}
+
+.section-tes-ls .all-test .left {
+  left: -35px;
+}
+
+.section-tes-ls .buts {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -20px;
+}
+
+.section-tes-ls .all-test {
+  display: flex !important;
+}
+
+.section-tes-ls .all-test .buts li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.section-tes-ls .all-test .buts li:last-child {
+  background-color: black;
+}
+
+@media (max-width: 991px) {
+  .section-tes-ls .all-test {
+    width: 100%;
+  }
+  .section-tes-ls .all-test .testmonials {
+    min-width: 100%;
+  }
+  .section-tes-ls .right {
+    right: 1px;
+  }
+  .section-tes-ls .all-test .left {
+    left: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-tes-ls .all-test .next-pre-testm .change {
+    display: none;
+  }
+  .section-tes-ls .all-test .text-testm blockquote {
+    width: 100%;
+  }
+}

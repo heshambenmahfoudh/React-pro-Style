@@ -1,6 +1,7 @@
 import React from 'react'
-import Header from './Header/Header'
-import Ourblog from './Ourblog/Ourblog'
+import Ourblog from "../Component/Blogs/Ourblog/Ourblog"
+import Header from "../Component/Blogs/Header/Header"
+
 
 const Blog = () => {
   return (

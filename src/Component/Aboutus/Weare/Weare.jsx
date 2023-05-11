@@ -1,6 +1,6 @@
 import React from 'react'
 import './Weare.css'
-import imgv5min from '../../../assets/imgv5min.jpg'
+import imgv5min from "../Data/imgv5min.jpg"
 
 const Weare = () => {
   return (

@@ -1,69 +1,81 @@
-// import React from 'react'
-// import './Testimonials.css'
+import React from 'react'
+import './Testimonials.css'
+import { testimonials } from '../../Elements/Data/dunmmy'
+import { BsArrowRightShort } from 'react-icons/bs'
+import { BsArrowLeftShort } from 'react-icons/bs'
+const Testimonials = () => {
+  const test_length = testimonials.length
 
-// const Testimonials = () => {
-//   return (
-//     <div className="section-Testimonials">
-//       <div className="container">
-//         <div className="row-test">
-//           <div className="head">
-//             <h2>Testimonials</h2>
-//             <p className="line"></p>
-//           </div>
-//           <div className="test-slid-con">
-//             <div className="test-ite">
-//               <img src="images/person_3-min.jpg" alt="" />
-//               <h2>Adam Aderson</h2>
-//               <blockquote>
-//                 <p>
-//                   “There live the blind texts. Separated they live in
-//                   Bookmarksgrove right at the coast of the Semantics, a large
-//                   language ocean.”
-//                 </p>
-//               </blockquote>
-//             </div>
-//             <div className="test-ite">
-//               <img src="images/person_3-min.jpg" alt="" />
-//               <h2>Adam Aderson</h2>
-//               <blockquote>
-//                 <p>
-//                   “There live the blind texts. Separated they live in
-//                   Bookmarksgrove right at the coast of the Semantics, a large
-//                   language ocean.”
-//                 </p>
-//               </blockquote>
-//             </div>
-//             <div className="test-ite">
-//               <img src="images/person_3-min.jpg" alt="" />
-//               <h2>Adam Aderson</h2>
-//               <blockquote>
-//                 <p>
-//                   “There live the blind texts. Separated they live in
-//                   Bookmarksgrove right at the coast of the Semantics, a large
-//                   language ocean.”
-//                 </p>
-//               </blockquote>
-//             </div>
-//             <div className="test-ite">
-//               <img src="images/person_3-min.jpg" alt="" />
-//               <h2>Adam Aderson</h2>
-//               <blockquote>
-//                 <p>
-//                   “There live the blind texts. Separated they live in
-//                   Bookmarksgrove right at the coast of the Semantics, a large
-//                   language ocean.”
-//                 </p>
-//               </blockquote>
-//             </div>
-//             <div className="slide-nav">
-//               <i className="fas fa-angle-left left"></i>
-//               <i className="fas fa-angle-right right "></i>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
+  const [click, setClick] = React.useState(0)
+  const clicked = (der) => {
+    der === 'left'
+      ? setClick(click === test_length - 1 ? 0 : click + 1)
+      : setClick(click === 0 ? test_length - 1 : click - 1)
+  }
 
-// export default Testimonials
+  const auto = () => {
+    setClick(click === 0 ? test_length - 1 : click - 1)
+  }
+
+  React.useEffect(() => {
+    const inter = setInterval(() => {
+      auto()
+    }, 5000)
+
+    return () => {
+      clearInterval(inter)
+    }
+  }, [click])
+
+  return (
+    <div className="section-tes-ls">
+      <div className="container">
+        <div className="row-test">
+          <div className="head-test">
+            <h2>Testimonials</h2>
+          </div>
+          <div className="all-test">
+            <div className="testmonials">
+              {testimonials.map(({ image, h2, blquote }, index) => (
+                <div key={index}>
+                  {index === click && (
+                    <>
+                      <div className="img-test">
+                        <img src={image} alt="" />
+                      </div>
+                      <div className="text-testm">
+                        <h2>{h2}</h2>
+                        <blockquote>{blquote}</blockquote>
+                      </div>
+                    </>
+                  )}
+                </div>
+              ))}
+              <div className="next-pre-testm">
+                <span
+                  className=" change  left"
+                  onClick={() => clicked('right')}
+                >
+                  <BsArrowLeftShort />
+                </span>
+                <span
+                  className=" change  right"
+                  onClick={() => clicked('left')}
+                >
+                  <BsArrowRightShort />
+                </span>
+              </div>
+              <ul className="buts" onClick={() => clicked()}>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Testimonials

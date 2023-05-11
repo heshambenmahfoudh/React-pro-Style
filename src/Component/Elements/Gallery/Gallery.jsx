@@ -10,17 +10,14 @@ const Gallery = () => {
           <div className="head-gal">
             <h2>03. Gallery</h2>
           </div>
-          
 
-            <div className="all-gallery">
-              {gallery.map((item) => (
-                <div className="gallery" key={item.id}>
-                  {/* <a href={item.a}> */}
-                  <img src={item.image} alt="" />
-                  {/* </a> */}
-                </div>
-              ))}
-            </div>
+          <div className="all-gallery">
+            {gallery.map((item) => (
+              <div className="gallery" key={item.id}>
+                <img src={item.image} alt="" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

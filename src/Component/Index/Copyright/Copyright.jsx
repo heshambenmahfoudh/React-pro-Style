@@ -7,8 +7,7 @@ const Copyright = () => {
       <div className="row">
         <div className="c-r"></div>
         <p>
-          Copyright ©2021. All Rights Reserved. — Designed with love by
-          Untree.co • License
+          Copyright ©2021. All Rights Reserved. — Designed with love by Hisham
         </p>
       </div>
     </div>
